@@ -6,10 +6,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body{
-}
 :root {
-  --clr: #292626d6;
   --bg-color: #2E3D4B;
   --text-color: #fa9e35;
 }
@@ -113,56 +110,17 @@ h1 {
   font-size: 1.5em;
   text-align: center;
   transition: 0.5s;
-  color: var(--clr);
-}
-.navigation ul li.active a .icon {
-  transform: translateY(-32px);
+  color: black;
 }
 .navigation ul li a .text {
   position: absolute;
-  color: var(--clr);
+  color: black;
   font-weight: 400;
   font-size: 0.75em;
   letter-spacing: 0.05em;
   transition: 0.5s;
   opacity: 0;
   transform: translateY(20px);
-}
-.navigation ul li.active a .text {
-  opacity: 1;
-  transform: translateY(10px);
-}
-.indicator {
-  position: absolute;
-  top: -50%;
-  width: 70px;
-  height: 70px;
-  background: tomato;
-  border-radius: 50%;
-  border: 6px solid var(--clr);
-  transition: 0.5s;
-}
-.indicator::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -22px;
-  width: 20px;
-  height: 20px;
-  background: transparent;
-  border-top-right-radius: 20px;
-  box-shadow: 1px -10px 0 0 var(--clr);
-}
-.indicator::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -22px;
-  width: 20px;
-  height: 20px;
-  background: transparent;
-  border-top-left-radius: 20px;
-  box-shadow: -1px -10px 0 0 var(--clr);
 }
 
 /* Indicator Transitions */
@@ -223,36 +181,60 @@ h1 {
 }
 
 .main{
-	margin-top: 80%;
 	padding: 10px;
 	display: flex;
 	justify-content: space-around;
 }
 .box{
 	width: 40vw;
+  height: fit-content;
 	padding: 5px;
 	background-color: rgba(121, 127, 121, 0.575);
 	text-align: center;
 	border-radius: 10px;
 	box-sizing: border-box;
+  padding-bottom: 20px;
 }
 .box p{
 	margin: 20px;
 	font-family: 'Mukti', sans-serif;
 }
 .box a{
+
 	text-decoration: none;
-	background-color: rgb(67, 196, 243);
+	background-color: rgb(2, 40, 255);
 	padding: 10px;	
-	font-weight: bolder;
-	color: rgba(101, 98, 98, 0.838);
+	color: rgb(255, 255, 255);
 	border-radius: 10px;
 }
+
+
+
+
+/*progree bar*/
+.progress{
+  display: flex;
+}
+.counter-container {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 50px;
+}
+
+.counter {
+  font-size: 40px;
+  margin-top: 20px;
+}
+  
+/*End*/
+
 .pg2{
 	width: auto;
 	display: flex;
 	overflow-x: auto;
-	background-color: aliceblue;
 	margin-bottom: 10vh;
 }
 .pg2::-webkit-scrollbar{
@@ -301,7 +283,10 @@ h1 {
 	background-image:linear-gradient(to bottom, rgba(241, 242, 246, 0.52), rgba(0, 0, 0, 0.73)),url(img/d.jpg);
 }
 h2{
+  border-bottom: solid black;
 	text-align: center;
 	margin: 20px;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;}
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
 

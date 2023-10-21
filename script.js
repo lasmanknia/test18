@@ -1,16 +1,5 @@
-const list = document.querySelectorAll(".list");
 
-function activeLink() {
-  list.forEach((item) => item.classList.remove("active"));
-  this.classList.add("active");
-}
-list.forEach((item) => item.addEventListener("click", activeLink));
-
-
-
-
-
-
+//navbar end
 
 var span = document.querySelector(".typewriter span");
 var textArr = span.getAttribute("data-text").split(", "); 
@@ -54,6 +43,24 @@ function deleting(textIndex, text) {
     }, sPerChar * 1000); 
 }
 
+
+//progressbar
+
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach((counter) => {
+  counter.innerText = "0";
+  const updateCounter = () => {
+    const target = +counter.getAttribute("data-target");
+    const count = +counter.innerText;
+    const increment = target / 300;
+    if (count < target) {
+      counter.innerText = `${Math.ceil(count + increment)}`;
+      setTimeout(updateCounter, 1);
+    } else counter.innerText = target;
+  };
+  updateCounter();
+});
 
 
 

@@ -6,7 +6,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.maateen.me/charu-chandan-3d/font.css" rel="stylesheet">
-    <link href="https://fonts.maateen.me/solaiman-lipi/font.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .list:nth-child(1){
+  background-color: tomato;
+  
+}
+    </style>
+
 </head>
 <body>
 
@@ -18,14 +26,14 @@
         <ul>
           <li class="list active">
             <a href="#">
-              <span class="icon">
+              <span class="icon" id="a1">
                 <ion-icon name="home-outline"></ion-icon>
               </span>
               <span class="text">Home</span>
             </a>
           </li>
           <li class="list">
-            <a href="#">
+            <a href="member.html">
               <span class="icon">
                 <ion-icon name="person-outline"></ion-icon>
               </span>
@@ -33,7 +41,7 @@
             </a>
           </li>
           <li class="list">
-            <a href="#">
+            <a href="contact.html">
               <span class="icon">
                 <ion-icon name="chatbubble-outline"></ion-icon>
               </span>
@@ -49,14 +57,13 @@
             </a>
           </li>
           <li class="list">
-            <a href="#">
+            <a href="login.html">
               <span class="icon">
                 <ion-icon name="settings-outline"></ion-icon>
               </span>
               <span class="text">Settings</span>
             </a>
           </li>
-          <div class="indicator"></div>
         </ul>
       </div>
     </nav>
@@ -70,6 +77,28 @@
               <span data-text="একটি পরিবার, একটি সংগঠন, একটি স্বপ্ন"></span>
             </p>
           </div>
+
+
+         <div class="progress">
+
+          <div class="counter-container">
+            <i class="fa fa-users fa-3x"></i>
+            <div class="counter" data-target="480"></div>
+            <span>Members</span>
+          </div>
+          <div class="counter-container">
+            <i class="fa fa-fa fa-3x"></i>
+            <div class="counter" data-target="44"></div>
+            <span>Activity Number</span>
+          </div>
+        </div>
+
+
+
+
+
+
+
 
      <div class="main">
         <div class="box">
@@ -102,5 +131,6 @@
       <script src="script.js"></script>
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
